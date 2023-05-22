@@ -1,3 +1,6 @@
+// Data
+let array = [30, 24, 12, 50, 11, 49, 11]
+
 function bubblesort(){
     let tmp = '';
     let output = '';
@@ -13,7 +16,7 @@ function bubblesort(){
     }
     document.getElementById('outputArray').innerHTML = "Sorted Array: " +array
     document.getElementById('outputIncrement').innerHTML = output
-    return true
+    return array
   }
 
 function pushArray(){

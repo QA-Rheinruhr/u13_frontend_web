@@ -64,7 +64,7 @@
           <aside>
             <h3>Tipps</h3>
             <ul>
-              <li><a href="">Tipp1</a></li>
+              <li><a href="https://de.wikipedia.org/wiki/Bubblesort">Wiki</a></li>
               <li><a href="">Tipp2</a></li>
               <li><a href="">Tipp3</a></li>
             </ul>
@@ -73,8 +73,14 @@
               <article>
                 <h2>Aufgabe: Bubblesort</h2>
                 <h3>Vorlage:</h3>
-                <img src="../img/bubblesort.png" alt="IHK Aufgabe: psudocode" srcset="">
-              </article>
+                <img src="../img/11_bubblesort/IHK_Task_bubblesort.png" alt="IHK Aufgabe: psudocode" srcset="">
+                <br><br>
+                <h4>Kontext:</h4>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Bubble-sort-example-300px.gif/220px-Bubble-sort-example-300px.gif" alt="">
+                <br><br>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Bubblesort_Animation.gif/220px-Bubblesort_Animation.gif" alt="">
+                <br><br>
+            </article>
           </section>
   
           <!-- Second Content Block  -->
@@ -85,7 +91,17 @@
         </aside>
           <section>
               <article><h2>Planung</h2></article>
-                <img src="../img/EigenerPsudocode.png" alt="" srcset="">
+                <h3>Struktogramme</h3>
+                <h4>Simple</h4>
+                <img src="../img/11_bubblesort/simple.jpg" alt="">
+                <h4>u13 Drawing - whiteboard</h4>
+                <img src="../img/11_bubblesort/u13_drawing.png" alt="" srcset="">
+                <h4>Detailed</h4>
+                <img src="../img/11_bubblesort/detailed.png" alt="">
+                <br>
+                <h3>Pseudocode</h3>
+                <img src="../img/11_bubblesort/pseudocode.jpg" alt="">
+                <h3>PAP</h3>
           </section>
   
           <!-- Third Content Block  -->
@@ -97,10 +113,18 @@
               <li><a href="">Array</a></li>
             </ul></aside>
           <section>
-              <article><h2>Lösung</h2></article>
-              <article>article</article>
-              <article>article</article>
-              <article>article</article>
+            <article>
+                <h2>Lösung: Lesson1.1 - Bubblesort</h2>
+                <input type="number" value="1" id="input">
+                <button onclick="pushArray()" >Wert dem Array hinzufügen</button>
+                <br>
+                <p id="output"></p>
+                <br>
+                <button onclick="bubblesort()">Array Sortieren</button>
+                <p id="outputIncrement"></p>
+                <p id="outputArray"></p>
+            </article>
+
           </section>
   
 
@@ -145,6 +169,7 @@
     }
   }
   </script>
+  <script src="../js/bubblesort.js"></script>
 
 </body>
 </html>
