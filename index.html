@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- external Stylesheet -->
+    <link rel="stylesheet" href="statics/css/updatedStyles.css">
+</head>
+<body>
+
+<div class="header">
+  <h2>Header</h2>
+  <p>Scroll down to see the sticky effect.</p>
+</div>
+
+<div class="" id="navbar">
+  <div class="topnav" id="myTopnav" >
+      <a href="/index.html" class="active">Home</a>
+
+      <div class="dropdown">
+        <button class="dropbtn">IHK
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="/statics/html/11_ihk.html">Lesson1.1: Bubblesort</a>
+          <a href="lesson2_2.html">Lesson1.2: Stringkomprimierung</a>
+          <a href="lesson2_3.html">Lesson1.3: Passwort Generator</a>
+          <a href="lesson2_4.html">Lesson1.4: getAppointment</a>
+          <a href="lesson2_5.html">Lesson1.5: Kino</a>
+        </div>
+      </div> 
+
+      <div class="dropdown">
+        <button class="dropbtn">UML
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="lesson3_1.html">Lesson3.1 Recherche</a>
+          <a href="lesson3_2.html">Lesson3.2 TagesschauNachbau</a>
+          <a href="lesson3_3.html">Lesson3.3 Jquery</a>
+        </div>
+      </div> 
+
+      <div class="dropdown">
+        <button class="dropbtn">Django
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="lesson3_1.html">Lesson4.1 Calculator</a>
+        </div>
+      </div>
+
+
+      
+      <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+  </div>
+</div>
+
+    <!-- START Content  -->
+    <div class="container content" style="margin-top: 69px;/* height: auto; */">
+      <div class="grid-container">
+  
+          <!-- Frist Content Block  -->
+          <aside>
+            <h3>Tipps</h3>
+            <ul>
+              <li><a href="">Tipp1</a></li>
+              <li><a href="">Tipp2</a></li>
+              <li><a href="">Tipp3</a></li>
+            </ul>
+          </aside>
+          <section>
+              <article>
+                <h2>Tag1 - HTML-Layout</h2>
+                <h3>Vorlage:</h3>
+                <img src="statics/img/meilenstein_01.png" alt="" srcset="">
+                <h3>Eigenes Ergebnis: <a href="/statics/html/base_page_template.html">Base Template</a></h3>
+              </article>
+          </section>
+  
+          <!-- Second Content Block  -->
+          <aside>aside</aside>
+          <section>
+              <article><h2>UML</h2></article>
+              <article>article</article>
+              <article>article</article>
+          </section>
+  
+          <!-- Third Content Block  -->
+          <aside>aside</aside>
+          <section>
+              <article><h2>django</h2></article>
+              <article>article</article>
+              <article>article</article>
+              <article>article</article>
+          </section>
+  
+          <!-- Fourth Content Block  -->
+          <aside>aside</aside>
+          <section>
+              <article>article</article>
+              <article>article</article>
+              <article>article</article>
+              <article>article</article>
+              <article>article</article>
+          </section>
+  
+  
+  
+  
+          
+      </div>
+  </div>
+  <!-- ENDE Footer  -->
+
+  <!-- START Content  -->
+  <footer>
+    <div class="container">Footer</div>
+  </footer>
+  <!-- END Footer  -->
+
+  <!-- JS -->
+  <script>
+  // JS: Header
+  function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+      x.className += " responsive";
+      } else {
+      x.className = "topnav";
+      }
+  }
+
+  // JS: StickyHeader
+  window.onscroll = function() {stickyFunction()};
+
+  var navbar = document.getElementById("navbar");
+  var sticky = navbar.offsetTop;
+
+  function stickyFunction() {
+    if (window.pageYOffset >= sticky) {
+      navbar.classList.add("sticky")
+    } else {
+      navbar.classList.remove("sticky");
+    }
+  }
+  </script>
+
+</body>
+</html>
