@@ -1,3 +1,7 @@
+alter = [34,56,65,43,23,28,32,34,67,25]
+document.getElementById('output_data').innerHTML = "Liste Alter: " + alter;
+
+
 function analyseData(){
     let anzahl_u30 = 0;
     let gesamt = 0;
