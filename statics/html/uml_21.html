@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- external Stylesheet -->
+    <link rel="stylesheet" href="/statics/css/updatedStyles.css">
+</head>
+<body>
+  <!-- START HEADING PART -->
+
+    <!-- START Section above Header -->
+    <div class="header">
+      <h2>Header</h2>
+      <p>Scroll down to see the sticky effect.</p>
+    </div>
+    <!-- END Section above Header -->
+
+    <!-- START Header / Nav -->
+    <div class="" id="navbar">
+      <div class="topnav" id="myTopnav" >
+          <a href="/index.html" class="active">Home</a>
+
+          <div class="dropdown">
+            <button class="dropbtn">IHK
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="11_ihk.html">Lesson1.1: Bubblesort</a>
+              <a href="12_ihk.html">Lesson1.2: Datenauswertung</a>
+              <!-- <a href="12_ihk.html">Lesson1.2: Stringkomprimierung</a>
+              <a href="lesson2_3.html">Lesson1.3: Passwort Generator</a>
+              <a href="lesson2_4.html">Lesson1.4: getAppointment</a>
+              <a href="lesson2_5.html">Lesson1.5: Kino</a> -->
+            </div>
+          </div> 
+
+          <div class="dropdown">
+            <button class="dropbtn">UML
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="lesson3_1.html">Lesson3.1 Recherche</a>
+              <a href="lesson3_2.html">Lesson3.2 TagesschauNachbau</a>
+              <a href="lesson3_3.html">Lesson3.3 Jquery</a>
+            </div>
+          </div> 
+
+          <div class="dropdown">
+            <button class="dropbtn">Django
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="lesson3_1.html">Lesson4.1 Calculator</a>
+            </div>
+          </div>
+
+
+          
+          <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+      </div>
+    </div>
+    <!-- END Header / Nav -->
+
+  <!-- END HEADING PART -->
+
+
+  <!-- START Content  -->
+  <div class="container content" style="margin-top: 69px;/* height: auto; */">
+    <div class="grid-container">
+
+        <!-- Frist Content Block  -->
+        <aside>
+            <h3>Tipps</h3>
+            <ul>
+                <li><a href="https://www.geeksforgeeks.org/unified-modeling-language-uml-introduction/">UML</a></li>
+                <li><a href="https://www.geeksforgeeks.org/unified-modeling-language-uml-sequence-diagrams/">Sequenzdiagramm</a></li>
+              </ul>
+        </aside>
+        <section>
+          <h1>UML-Sequenzdiagramme</h1>
+            <article>
+              <p>UML-Sequenzdiagramme sind ein wichtiger Bestandteil der Unified Modeling Language (UML) und werden verwendet, um Interaktionen zwischen Objekten oder Klassen in einem System zu modellieren. Als Fachinformatiker sollten Sie über folgende Aspekte Bescheid wissen:</p>
+              
+              <h2>Struktur von Sequenzdiagrammen</h2>
+              <ul>
+                  <li>Sequenzdiagramme bestehen aus Objekten, Nachrichten, Lebenslinien und Aktivierungen.</li>
+                  <li>Objekte repräsentieren Instanzen von Klassen oder Komponenten.</li>
+                  <li>Nachrichten zeigen die Kommunikation zwischen den Objekten an.</li>
+                  <li>Lebenslinien stellen die Existenz von Objekten während einer bestimmten Zeitspanne dar.</li>
+                  <li>Aktivierungen zeigen an, wann ein Objekt aktiv ist und eine Aufgabe ausführt.</li>
+              </ul>
+              
+              <h2>Anwendung von Sequenzdiagrammen</h2>
+              <p>Sequenzdiagramme werden häufig verwendet, um den Nachrichtenaustausch und die Interaktionen zwischen Objekten oder Klassen in einem System zu veranschaulichen. Sie können eingesetzt werden, um:</p>
+              <ul>
+                  <li>den zeitlichen Ablauf von Interaktionen zu modellieren und zu analysieren</li>
+                  <li>die Reihenfolge von Nachrichten und Aktivitäten zu visualisieren</li>
+                  <li>die Kommunikation zwischen verschiedenen Akteuren oder Komponenten zu dokumentieren</li>
+                  <li>Prozessabläufe oder Systemverhalten zu verstehen und zu optimieren</li>
+              </ul>
+              
+              <h2>Wichtigkeit für den Fachinformatiker</h2>
+              <p>Als Fachinformatiker sollten Sie in der Lage sein, Sequenzdiagramme zu lesen, zu interpretieren und zu erstellen. Dies ist wichtig, um die Interaktionen und den Nachrichtenaustausch zwischen verschiedenen Komponenten oder Objekten in einem System zu verstehen und zu analysieren. Sequenzdiagramme können Ihnen dabei helfen, Fehler zu identifizieren, die Effizienz des Systems zu verbessern und die Kommunikation zwischen den beteiligten Parteien zu erleichtern.</p>
+              
+              <p>Es empfiehlt sich, Sequenzdiagramme anhand von Beispielen zu üben und zu verstehen, um sicherzustellen, dass Sie sie in Ihrer Abschlussprüfung erfolgreich anwenden können.</p>
+            </article>
+        </section>
+
+        <!-- Second Content Block  -->
+        <aside>aside</aside>
+        <section>
+            <article>
+                <H2>IHK-Belegsatz</H2>
+                <img src="../img/uml/Belegsatz_UML_sequenzdiagramm.png" alt="" srcset="">
+            </article>
+        </section>
+      
+    </div>
+  </div>
+  <!-- ENDE Content  -->
+
+
+  <!-- START <Footer>  -->
+  <footer>
+    <div class="container">Footer</div>
+  </footer>
+  <!-- END Footer  -->
+
+  <!-- JS -->
+  <script>
+    // JS: Header
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+        x.className += " responsive";
+        } else {
+        x.className = "topnav";
+        }
+    }
+
+    // JS: StickyHeader
+    window.onscroll = function() {stickyFunction()};
+
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+
+    function stickyFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
+  </script>
+
+</body>
+</html>

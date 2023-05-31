@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- external Stylesheet -->
+    <link rel="stylesheet" href="/statics/css/updatedStyles.css">
+</head>
+<body>
+  <!-- START HEADING PART -->
+
+    <!-- START Section above Header -->
+    <div class="header">
+      <h2>Header</h2>
+      <p>Scroll down to see the sticky effect.</p>
+    </div>
+    <!-- END Section above Header -->
+
+    <!-- START Header / Nav -->
+    <div class="" id="navbar">
+      <div class="topnav" id="myTopnav" >
+          <a href="/index.html" class="active">Home</a>
+
+          <div class="dropdown">
+            <button class="dropbtn">IHK
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="11_ihk.html">Lesson1.1: Bubblesort</a>
+              <a href="12_ihk.html">Lesson1.2: Datenauswertung</a>
+              <!-- <a href="12_ihk.html">Lesson1.2: Stringkomprimierung</a>
+              <a href="lesson2_3.html">Lesson1.3: Passwort Generator</a>
+              <a href="lesson2_4.html">Lesson1.4: getAppointment</a>
+              <a href="lesson2_5.html">Lesson1.5: Kino</a> -->
+            </div>
+          </div> 
+
+          <div class="dropdown">
+            <button class="dropbtn">UML
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="lesson3_1.html">Lesson3.1 Recherche</a>
+              <a href="lesson3_2.html">Lesson3.2 TagesschauNachbau</a>
+              <a href="lesson3_3.html">Lesson3.3 Jquery</a>
+            </div>
+          </div> 
+
+          <div class="dropdown">
+            <button class="dropbtn">Django
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="lesson3_1.html">Lesson4.1 Calculator</a>
+            </div>
+          </div>
+
+
+          
+          <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+      </div>
+    </div>
+    <!-- END Header / Nav -->
+
+  <!-- END HEADING PART -->
+
+
+  <!-- START Content  -->
+  <div class="container content" style="margin-top: 69px;/* height: auto; */">
+    <div class="grid-container">
+
+        <!-- Frist Content Block  -->
+        <aside>
+            <h3>Tipps</h3>
+            <ul>
+                <li><a href="https://www.geeksforgeeks.org/unified-modeling-language-uml-introduction/">UML</a></li>
+                <li><a href="https://www.geeksforgeeks.org/unified-modeling-language-uml-activity-diagrams/">Aktivitätsdiagramm</a></li>
+            </ul>
+        </aside>
+        <section>
+            <article>
+                <h2>Aktivitätsdiagramme</h2>
+                <p>Aktivitätsdiagramme sind ein wichtiger Bestandteil der Unified Modeling Language (UML) und dienen dazu, Geschäftsprozesse, Systemabläufe oder Verhaltensweisen zu visualisieren. Als Umschüler im Bereich Fachinformatik sollten Sie über folgende Aspekte Bescheid wissen:</p>
+                
+                <h3>Struktur von Aktivitätsdiagrammen</h3>
+                <ul>
+                    <li>Aktivitätsdiagramme bestehen aus Aktionen, Kontrollflüssen, Entscheidungen und Verzweigungen.</li>
+                    <li>Aktionen repräsentieren einzelne Aktivitäten oder Operationen.</li>
+                    <li>Kontrollflüsse zeigen die Reihenfolge der Aktivitäten an.</li>
+                    <li>Entscheidungen werden mit bedingten Verzweigungen dargestellt, basierend auf bestimmten Kriterien oder Bedingungen.</li>
+                    <li>Parallele Abläufe können verwendet werden, um gleichzeitige Aktivitäten darzustellen.</li>
+                </ul>
+                
+                <h4>Anwendung von Aktivitätsdiagrammen</h4>
+                <p>Aktivitätsdiagramme helfen dabei, komplexe Geschäftsprozesse oder Systemabläufe besser zu verstehen und zu dokumentieren. Sie können eingesetzt werden, um:</p>
+                <ul>
+                    <li>den Ablauf von Aufgaben oder Prozessen zu modellieren und zu analysieren</li>
+                    <li>Entscheidungen und Verzweigungen in einem System darzustellen</li>
+                    <li>parallele Aktivitäten oder alternative Abläufe zu visualisieren</li>
+                    <li>den Informationsfluss zwischen verschiedenen Akteuren oder Komponenten zu veranschaulichen</li>
+                </ul>
+                
+                <h5>Wichtigkeit für die Fachinformatik</h5>
+                <p>Als Fachinformatiker für Systemintegration sollten Sie in der Lage sein, Aktivitätsdiagramme zu lesen, zu interpretieren und zu erstellen. Dies ist wichtig, um Systemabläufe zu verstehen, zu analysieren und gegebenenfalls zu optimieren. Aktivitätsdiagramme können auch bei der Kommunikation mit Kunden, Entwicklern und anderen Stakeholdern hilfreich sein, um komplexe Zusammenhänge verständlich darzustellen.</p>
+                
+                <p>Es empfiehlt sich, Aktivitätsdiagramme anhand von Beispielen zu üben und zu verstehen, um sicherzustellen, dass Sie sie in Ihrer Abschlussprüfung erfolgreich anwenden können.</p>
+            </article>
+        </section>
+
+        <!-- Second Content Block  -->
+        <aside>aside</aside>
+        <section>
+            <article>
+                <H2>IHK-Belegsatz</H2>
+                <img src="../img/uml/Belegsatz_UML_Aktivitaetsdiagramm.png" alt="" srcset="">
+            </article>
+        </section>
+      
+    </div>
+  </div>
+  <!-- ENDE Content  -->
+
+
+  <!-- START <Footer>  -->
+  <footer>
+    <div class="container">Footer</div>
+  </footer>
+  <!-- END Footer  -->
+
+  <!-- JS -->
+  <script>
+    // JS: Header
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+        x.className += " responsive";
+        } else {
+        x.className = "topnav";
+        }
+    }
+
+    // JS: StickyHeader
+    window.onscroll = function() {stickyFunction()};
+
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+
+    function stickyFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
+  </script>
+
+</body>
+</html>
