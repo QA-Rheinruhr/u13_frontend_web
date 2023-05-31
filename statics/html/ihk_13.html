@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- external Stylesheet -->
+    <link rel="stylesheet" href="../css/updatedStyles.css">
+</head>
+<body>
+
+<div class="header">
+  <h2>Header</h2>
+  <p>Scroll down to see the sticky effect.</p>
+</div>
+
+<div class="" id="navbar">
+  <div class="topnav" id="myTopnav" >
+      <a href="/index.html" class="active">Home</a>
+
+      <div class="dropdown">
+        <button class="dropbtn">IHK
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="11_ihk.html">Lesson1.1: Bubblesort</a>
+          <a href="12_ihk.html">Lesson1.2: Datenauswertung</a>
+          <!-- <a href="12_ihk.html">Lesson1.2: Stringkomprimierung</a>
+          <a href="lesson2_3.html">Lesson1.3: Passwort Generator</a>
+          <a href="lesson2_4.html">Lesson1.4: getAppointment</a>
+          <a href="lesson2_5.html">Lesson1.5: Kino</a> -->
+        </div>
+      </div> 
+
+      <div class="dropdown">
+        <button class="dropbtn">UML
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="lesson3_1.html">Lesson3.1 Recherche</a>
+          <a href="lesson3_2.html">Lesson3.2 TagesschauNachbau</a>
+          <a href="lesson3_3.html">Lesson3.3 Jquery</a>
+        </div>
+      </div> 
+
+      <div class="dropdown">
+        <button class="dropbtn">Django
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="lesson3_1.html">Lesson4.1 Calculator</a>
+        </div>
+      </div>
+
+
+      
+      <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+  </div>
+</div>
+
+    <!-- START Content  -->
+    <div class="container content" style="margin-top: 69px;/* height: auto; */">
+
+      <!-- NAV container (Back/Next) -->
+      <div class="flex-container">
+        <a class="btn btn-secondary" href="ihk_11.html">Back</a>
+        <a class="btn btn-primary" href="ihk_13.html">Next</a>
+      </div>
+
+      <!-- Start grid -->
+      <div class="grid-container">
+  
+          <!-- Frist Content Block:  -->
+          <!-- AUFGABE -->
+          <aside>
+            <h3>Tipps</h3>
+            <ul>
+                <li><a href="https://www.w3schools.com/js/js_if_else.asp">if else</a></li>
+                <li><a href="https://www.w3schools.com/js/js_loop_for.asp">Loops</a></li>
+                <li><a href="https://www.w3schools.com/js/js_functions.asp">functions</a></li>
+                <li><a href="https://www.w3schools.com/jsref/event_onclick.asp">onclick</a></li>
+                <li><a href="https://www.w3schools.com/jsref/event_onclick.asp">getElementById</a></li>
+              </ul>
+          </aside>
+          <section>
+              <article>
+                <h2>IHK - 1.2</h2>
+                <h3>Aufgabe: Daten Auswertung</h3>
+                <img src="../img/12_auswertung/auswertung.png" alt="IHK Aufgabe: psudocode" srcset="">
+
+            </article>
+          </section>
+  
+          <!-- Second Content Block  -->
+          <!-- PLANUNG -->
+          <aside>
+            <h3>Tipps</h3>
+            <p>Hier soll entweder ein PAP, Pseudocode oder Struktugramm zur Planung vor der Codierung in JavaScript erstellt werden.</p>
+        </aside>
+          <section>
+              <article><h2>Planung</h2></article>
+                <h3>Struktogramme</h3>
+                <h4>Simple</h4>
+                <img src="../img/" alt="">
+                <h4>u13 Drawing - whiteboard</h4>
+                <img src="../img/" alt="" srcset="">
+                <h4>Detailed</h4>
+                <img src="../img/" alt="">
+                <br>
+                <h3>Pseudocode</h3>
+                <img src="../img/" alt="">
+                <h3>PAP</h3>
+          </section>
+  
+          <!-- Third Content Block  -->
+          <!-- Lösung -->
+          <aside>            
+            <h3>Tipps</h3>
+            <ul>
+              <li><a href="">getElementById</a></li>
+              <li><a href="">Array</a></li>
+            </ul></aside>
+          <section>
+            <article>
+                <h2>IHK1.2 - Data Analysis - JS</h2>
+                <p id="output_data"></p>
+                <button onclick="analyseData()">analyseData</button>
+                <p id="output_durchschnittsAlter"></p>
+                <p id="output_anteil_prozentual"></p>
+            </article>
+
+          </section>
+  
+
+  
+  
+  
+  
+          
+      </div>
+  </div>
+  <!-- ENDE Footer  -->
+
+  <!-- START Content  -->
+  <footer>
+    <div class="container">Footer</div>
+  </footer>
+  <!-- END Footer  -->
+
+  <!-- JS -->
+  <script>
+  // JS: Header
+  function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+      x.className += " responsive";
+      } else {
+      x.className = "topnav";
+      }
+  }
+
+  // JS: StickyHeader
+  window.onscroll = function() {stickyFunction()};
+
+  var navbar = document.getElementById("navbar");
+  var sticky = navbar.offsetTop;
+
+  function stickyFunction() {
+    if (window.pageYOffset >= sticky) {
+      navbar.classList.add("sticky")
+    } else {
+      navbar.classList.remove("sticky");
+    }
+  }
+  </script>
+  <script src="../js/dataAnalysis.js"></script>
+
+</body>
+</html>

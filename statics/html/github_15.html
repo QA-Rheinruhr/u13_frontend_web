@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- external Stylesheet -->
+    <link rel="stylesheet" href="/statics/css/updatedStyles.css">
+</head>
+<body>
+  <!-- START HEADING PART -->
+
+    <!-- START Section above Header -->
+    <div class="header">
+      <h2>Header</h2>
+      <p>Scroll down to see the sticky effect.</p>
+    </div>
+    <!-- END Section above Header -->
+
+    <!-- START Header / Nav -->
+    <div class="" id="navbar">
+      <div class="topnav" id="myTopnav" >
+          <a href="/index.html" class="active">Home</a>
+
+          <div class="dropdown">
+            <button class="dropbtn">IHK
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="ihk_11.html">Lesson1.1: Bubblesort</a>
+              <a href="ihk_12.html">Lesson1.2: Datenauswertung</a>
+              <a href="ihk_13.html">Lesson1.3: Stringkomprimierung</a>
+              <a href="ihk_14.html">Lesson1.4: getAppointment</a>
+              <a href="ihk_15.html">Lesson1.5: Passwort Generator</a>
+            </div>
+          </div>
+
+          <div class="dropdown">
+            <button class="dropbtn">UML
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="lesson3_1.html">Lesson3.1 Recherche</a>
+              <a href="lesson3_2.html">Lesson3.2 TagesschauNachbau</a>
+              <a href="lesson3_3.html">Lesson3.3 Jquery</a>
+            </div>
+          </div>
+
+          <div class="dropdown">
+            <button class="dropbtn">Django
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="lesson3_1.html">Lesson4.1 Calculator</a>
+            </div>
+          </div>
+
+
+
+          <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+      </div>
+    </div>
+    <!-- END Header / Nav -->
+
+  <!-- END HEADING PART -->
+
+
+  <!-- START Content  -->
+  <div class="container content" style="margin-top: 69px;/* height: auto; */">
+    <div class="grid-container">
+
+
+      <!-- first Content Block  -->
+      <aside>
+        <ul>
+          <li><a href="">DevOps</a></li>
+          <li><a href="">Django Development</a></li>
+          <li><a href="">Django Production</a></li>
+
+        </ul>
+      </aside>
+      <section>
+          <article>
+              <h2>Django - DevOps</h2>
+              <h3>Github - Workflow: Implementation - Frontend/Backend</h3>
+              <img src="../img/Github/Github_django_workflow.png" alt="" srcset="">
+          </article>
+
+      </section>
+
+        <!-- secon content block -->
+        <aside>
+          <h3>Tipps</h3>
+          <ul>
+              <li><a href="https://www.geeksforgeeks.org/unified-modeling-language-uml-introduction/">UML</a></li>
+              <li><a href="https://www.geeksforgeeks.org/unified-modeling-language-uml-activity-diagrams/">Aktivitätsdiagramm</a></li>
+              <li><a href="https://www.geeksforgeeks.org/unified-modeling-language-uml-sequence-diagrams/">Sequenzdiagramm</a></li>
+            </ul>
+        </aside>
+        <section>
+            <h1>Integration von Frontend-Code in Django</h1>
+            <article>
+              <h2>1. Base Templates erstellen</h2>
+              <p>
+                  In Django können Base Templates verwendet werden, um gemeinsame Elemente wie Header, Footer und Navigation über mehrere Seiten hinweg wiederzuverwenden. Hier ist eine Anleitung, wie du Base Templates erstellen kannst:
+              </p>
+              <ol>
+                  <li>Erstelle eine neue HTML-Datei für dein Base Template, z.B. "base.html".</li>
+                  <li>Definiere die allgemeine Struktur deiner Webseite in diesem Base Template, einschließlich des HTML-Grundgerüsts, des Headers, des Footers und der Navigation.</li>
+                  <li>Verwende den Django Template Language-Syntax, um Stellen im Template zu kennzeichnen, an denen sich der Inhalt je nach Seite ändern kann. Dies können sogenannte "Template-Tags" wie <code>{% block content %}</code> oder <code>{% block title %}</code> sein.</li>
+                  <li>Speichere das Base Template im Verzeichnis "templates" deiner Django-Anwendung.</li>
+              </ol>
+          
+              <h2>2. Statische Dateien hinzufügen</h2>
+              <p>
+                  Um CSS- und JavaScript-Dateien in Django zu verwenden, müssen sie als statische Dateien behandelt werden. Hier ist eine Anleitung, wie du statische Dateien hinzufügen kannst:
+              </p>
+              <ol>
+                  <li>Erstelle einen Ordner namens "static" in deiner Django-Anwendung.</li>
+                  <li>Innerhalb des "static"-Ordners kannst du weitere Unterordner erstellen, um deine CSS- und JavaScript-Dateien zu organisieren.</li>
+                  <li>Kopiere deine CSS-Dateien in den entsprechenden Unterordner innerhalb des "static"-Ordners.</li>
+                  <li>Verwende den Django Template Language-Syntax, um die statischen Dateien in deinem HTML-Code einzubinden. Zum Beispiel: <code>{% load static %}</code> und <code>&lt;link rel="stylesheet" href="{% static 'pfad/zur/css/datei.css' %}"&gt;</code>.</li>
+              </ol>
+          
+              <p>
+                  Beachte, dass du die Dateipfade in den <code>{% static %}</code>-Tags entsprechend den tatsächlichen Pfaden zu deinen statischen Dateien anpassen musst.
+              </p>
+          
+              <h2>3. Vererbung und Anpassung der Templates</h2>
+              <p>
+                  Nun kannst du deine Base Templates in den spezifischen Templates deiner Django-Anwendung vererben und anpassen. Hier ist eine Anleitung dazu:
+              </p>
+              <ol>
+                  <li>Erstelle eine neue HTML-Datei für deine spezifische Seite, z.B. "home.html".</li>
+                  <li>Am Anfang des Templates verwendest du den Django Template Language-Syntax <code>{% extends 'base.html' %}</code>, um das Base Template zu erben.</li>
+                  <li>Verwende dann die <code>{% block %}</code>-Tags, um spezifischen Inhalt in das Template einzufügen, der sich von Seite zu Seite ändern soll. Zum Beispiel: <code>{% block content %}Hier kommt der spezifische Inhalt{% endblock %}</code>.</li>
+                  <li>Speichere das spezifische Template im Verzeichnis "templates" deiner Django-Anwendung.</li>
+              </ol>
+          
+              <p>
+                  Jetzt kannst du deine spezifischen Templates verwenden, um deine Frontend-Code in das Backend mit Django zu integrieren. Die Base Templates stellen das Grundgerüst bereit, während die spezifischen Templates den individuellen Inhalt für jede Seite definieren.
+              </p>
+                
+            </article>
+            
+            
+        </section>
+
+        <!-- first Content Block  -->
+        <aside>
+          <h3>Tipps</h3>
+          <ul>
+              <li><a href="https://www.geeksforgeeks.org/unified-modeling-language-uml-introduction/">UML</a></li>
+              <li><a href="https://www.geeksforgeeks.org/unified-modeling-language-uml-activity-diagrams/">Aktivitätsdiagramm</a></li>
+              <li><a href="https://www.geeksforgeeks.org/unified-modeling-language-uml-sequence-diagrams/">Sequenzdiagramm</a></li>
+            </ul>
+        </aside>
+        <section>
+            <h1>Integration von Frontend-Code in Django</h1>
+            <article>
+
+          
+              <h2>2. Statische Dateien hinzufügen</h2>
+              <p>
+                  Um CSS- und JavaScript-Dateien in Django zu verwenden, müssen sie als statische Dateien behandelt werden. Hier ist eine Anleitung, wie du statische Dateien hinzufügen kannst:
+              </p>
+              <ol>
+                  <li>Erstelle einen Ordner namens "static" in deiner Django-Anwendung.</li>
+                  <li>Innerhalb des "static"-Ordners kannst du weitere Unterordner erstellen, um deine CSS- und JavaScript-Dateien zu organisieren.</li>
+                  <li>Kopiere deine CSS-Dateien in den entsprechenden Unterordner innerhalb des "static"-Ordners.</li>
+                  <li>Verwende den Django Template Language-Syntax, um die statischen Dateien in deinem HTML-Code einzubinden. Zum Beispiel: <code>{% load static %}</code> und <code>&lt;link rel="stylesheet" href="{% static 'pfad/zur/css/datei.css' %}"&gt;</code>.</li>
+              </ol>
+          
+              <p>
+                  Beachte, dass du die Dateipfade in den <code>{% static %}</code>-Tags entsprechend den tatsächlichen Pfaden zu deinen statischen Dateien anpassen musst.
+              </p>
+          
+
+                
+            </article>
+            
+            
+        </section>
+
+        <!-- first Content Block  -->
+        <aside>
+          <h3>Tipps</h3>
+          <ul>
+              <li><a href="https://www.geeksforgeeks.org/unified-modeling-language-uml-introduction/">UML</a></li>
+              <li><a href="https://www.geeksforgeeks.org/unified-modeling-language-uml-activity-diagrams/">Aktivitätsdiagramm</a></li>
+              <li><a href="https://www.geeksforgeeks.org/unified-modeling-language-uml-sequence-diagrams/">Sequenzdiagramm</a></li>
+            </ul>
+        </aside>
+        <section>
+            <h1>Integration von Frontend-Code in Django</h1>
+            <article>
+              <h2>3. Vererbung und Anpassung der Templates</h2>
+              <p>
+                  Nun kannst du deine Base Templates in den spezifischen Templates deiner Django-Anwendung vererben und anpassen. Hier ist eine Anleitung dazu:
+              </p>
+              <ol>
+                  <li>Erstelle eine neue HTML-Datei für deine spezifische Seite, z.B. "home.html".</li>
+                  <li>Am Anfang des Templates verwendest du den Django Template Language-Syntax <code>{% extends 'base.html' %}</code>, um das Base Template zu erben.</li>
+                  <li>Verwende dann die <code>{% block %}</code>-Tags, um spezifischen Inhalt in das Template einzufügen, der sich von Seite zu Seite ändern soll. Zum Beispiel: <code>{% block content %}Hier kommt der spezifische Inhalt{% endblock %}</code>.</li>
+                  <li>Speichere das spezifische Template im Verzeichnis "templates" deiner Django-Anwendung.</li>
+              </ol>
+          
+              <p>
+                  Jetzt kannst du deine spezifischen Templates verwenden, um deine Frontend-Code in das Backend mit Django zu integrieren. Die Base Templates stellen das Grundgerüst bereit, während die spezifischen Templates den individuellen Inhalt für jede Seite definieren.
+              </p>
+                
+            </article>
+            
+            
+        </section>
+        
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+  <!-- ENDE Content  -->
+
+
+  <!-- START <Footer>  -->
+  <footer>
+    <div class="container">Footer</div>
+  </footer>
+  <!-- END Footer  -->
+
+  <!-- JS -->
+  <script>
+    // JS: Header
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+        x.className += " responsive";
+        } else {
+        x.className = "topnav";
+        }
+    }
+
+    // JS: StickyHeader
+    window.onscroll = function() {stickyFunction()};
+
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+
+    function stickyFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
+  </script>
+
+</body>
+</html>

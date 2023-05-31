@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- external Stylesheet -->
+    <link rel="stylesheet" href="/statics/css/updatedStyles.css">
+</head>
+<body>
+  <!-- START HEADING PART -->
+
+    <!-- START Section above Header -->
+    <div class="header">
+      <h2>Header</h2>
+      <p>Scroll down to see the sticky effect.</p>
+    </div>
+    <!-- END Section above Header -->
+
+    <!-- START Header / Nav -->
+    <div class="" id="navbar">
+      <div class="topnav" id="myTopnav" >
+          <a href="/index.html" class="active">Home</a>
+
+          <div class="dropdown">
+            <button class="dropbtn">IHK
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="ihk_11.html">Lesson1.1: Bubblesort</a>
+              <a href="ihk_12.html">Lesson1.2: Datenauswertung</a>
+              <a href="ihk_13.html">Lesson1.3: Stringkomprimierung</a>
+              <a href="ihk_14.html">Lesson1.4: getAppointment</a>
+              <a href="ihk_15.html">Lesson1.5: Passwort Generator</a>
+            </div>
+          </div> 
+
+          <div class="dropdown">
+            <button class="dropbtn">UML
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="lesson3_1.html">Lesson3.1 Recherche</a>
+              <a href="lesson3_2.html">Lesson3.2 TagesschauNachbau</a>
+              <a href="lesson3_3.html">Lesson3.3 Jquery</a>
+            </div>
+          </div> 
+
+          <div class="dropdown">
+            <button class="dropbtn">Django
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="lesson3_1.html">Lesson4.1 Calculator</a>
+            </div>
+          </div>
+
+
+          
+          <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+      </div>
+    </div>
+    <!-- END Header / Nav -->
+
+  <!-- END HEADING PART -->
+
+
+  <!-- START Content  -->
+  <div class="container content" style="margin-top: 69px;/* height: auto; */">
+    <div class="grid-container">
+
+        
+        <!-- first Content Block  -->
+        <aside>
+          <h3>Tipps</h3>
+          <ul>
+              <li><a href="https://www.geeksforgeeks.org/unified-modeling-language-uml-introduction/">UML</a></li>
+              <li><a href="https://www.geeksforgeeks.org/unified-modeling-language-uml-activity-diagrams/">Aktivitätsdiagramm</a></li>
+              <li><a href="https://www.geeksforgeeks.org/unified-modeling-language-uml-sequence-diagrams/">Sequenzdiagramm</a></li>
+            </ul>
+        </aside>
+        <section>
+            <h1>GitHub Repository forken</h1>
+            <article>
+
+
+                <p>
+                    Das Forken eines Repositorys auf GitHub ermöglicht es dir, eine persönliche Kopie des Repositorys unter deinem eigenen GitHub-Account zu erstellen. Dadurch kannst du Änderungen am Repository vornehmen, ohne das Original-Repository zu beeinflussen. Hier ist eine Anleitung zum Forken eines Repositorys:
+                </p>
+            
+                <ol>
+                    <li>Rufe die GitHub-Website (<a href="https://github.com/">https://github.com/</a>) auf und gehe zum Repository, das du forken möchtest.</li>
+                    <li>Klicke auf den Button "Fork" (Forken) in der oberen rechten Ecke der Repository-Seite.</li>
+                    <li>GitHub wird eine Kopie des Repositorys unter deinem GitHub-Account erstellen.</li>
+                    <li>Nachdem das Forken abgeschlossen ist, wirst du zur Seite deines geforkten Repositorys weitergeleitet.</li>
+                    <li>Jetzt kannst du Änderungen an dem geforkten Repository vornehmen.</li>
+                </ol>
+            
+                <p>
+                    Beachte, dass das geforkte Repository anfänglich mit dem Original-Repository verbunden bleibt. Das bedeutet, dass wenn das Original-Repository aktualisiert wird, du diese Änderungen übernehmen kannst, um dein geforktes Repository auf dem neuesten Stand zu halten.
+                </p>
+            
+                <p>
+                    Wenn du Änderungen vorgenommen hast und diese zur Verfügung stellen möchtest, kannst du eine Pull-Anfrage (Pull Request) erstellen. Dadurch kannst du dem Eigentümer des Original-Repositorys deine Änderungen vorstellen und darum bitten, dass diese in das Original-Repository übernommen werden.
+                </p>
+                <img src="../img/Github/Github_fork.png" alt="" srcset="">
+
+            </article>
+
+        </section>
+
+
+
+
+
+
+
+
+        
+    </div>
+  </div>
+  <!-- ENDE Content  -->
+
+
+  <!-- START <Footer>  -->
+  <footer>
+    <div class="container">Footer</div>
+  </footer>
+  <!-- END Footer  -->
+
+  <!-- JS -->
+  <script>
+    // JS: Header
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+        x.className += " responsive";
+        } else {
+        x.className = "topnav";
+        }
+    }
+
+    // JS: StickyHeader
+    window.onscroll = function() {stickyFunction()};
+
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+
+    function stickyFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
+  </script>
+
+</body>
+</html>

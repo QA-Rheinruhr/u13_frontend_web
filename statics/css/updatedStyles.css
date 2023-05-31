@@ -110,7 +110,7 @@
       /* Basic layout and coloring */
       header {
           text-align: center;
-          background-color: #555;
+          background-color: lightgrey;
       }
       aside {
           background-color: #04AA6D;
@@ -164,6 +164,39 @@
         counter-increment: item;
       }
 
+      /* START Button CSS */
+      .btn {
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        min-width: 5em;
+      }
+      .btn-primary {background-color: #04AA6D;} /* Green */
+      .btn-secondary {background-color: darkgrey;} /* Blue */
+      /* ENDE Button CSS */
+
+      /* START Flexbox prev <--> next  */
+      .flex-container {
+        display: flex;
+        justify-content: space-between;
+        background-color: lightgrey;
+      }
+      
+      .flex-container > div {
+        background-color: #f1f1f1;
+        width: 100px;
+        margin: 10px;
+        text-align: center;
+        line-height: 75px;
+        font-size: 30px;
+      }
+      /* ENDE Flexbox prev <--> next  */
 
       /* sticky Header CSS */
       .sticky {

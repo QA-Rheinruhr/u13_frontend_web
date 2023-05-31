@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- external Stylesheet -->
+    <link rel="stylesheet" href="/statics/css/updatedStyles.css">
+</head>
+<body>
+  <!-- START HEADING PART -->
+
+    <!-- START Section above Header -->
+    <div class="header">
+      <h2>CHEATSHEET</h2>
+      <p>UML Aktivitätsdiagramm </p>
+    </div>
+    <!-- END Section above Header -->
+
+    <!-- START Header / Nav -->
+    <div class="" id="navbar">
+      <div class="topnav" id="myTopnav" >
+          <a href="/index.html" class="active">Home</a>
+
+          <div class="dropdown">
+            <button class="dropbtn">IHK
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="11_ihk.html">Lesson1.1: Bubblesort</a>
+              <a href="12_ihk.html">Lesson1.2: Datenauswertung</a>
+              <!-- <a href="12_ihk.html">Lesson1.2: Stringkomprimierung</a>
+              <a href="lesson2_3.html">Lesson1.3: Passwort Generator</a>
+              <a href="lesson2_4.html">Lesson1.4: getAppointment</a>
+              <a href="lesson2_5.html">Lesson1.5: Kino</a> -->
+            </div>
+          </div> 
+
+          <div class="dropdown">
+            <button class="dropbtn">UML
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="lesson3_1.html">Lesson3.1 Recherche</a>
+              <a href="lesson3_2.html">Lesson3.2 TagesschauNachbau</a>
+              <a href="lesson3_3.html">Lesson3.3 Jquery</a>
+            </div>
+          </div> 
+
+          <div class="dropdown">
+            <button class="dropbtn">Django
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="lesson3_1.html">Lesson4.1 Calculator</a>
+            </div>
+          </div>
+
+
+          
+          <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+      </div>
+    </div>
+    <!-- END Header / Nav -->
+
+  <!-- END HEADING PART -->
+
+
+  <!-- START Content  -->
+  <div class="container content" style="margin-top: 69px;/* height: auto; */">
+    <div class="grid-container">
+
+        <!-- Frist Content Block  -->
+        <aside>
+          <h3>Tipps</h3>
+          <ul>
+            <li><a href="https://www.geeksforgeeks.org/unified-modeling-language-uml-introduction/">UML</a></li>
+            <li><a href="https://www.geeksforgeeks.org/unified-modeling-language-uml-activity-diagrams/">Aktivitätsdiagramm</a></li>
+        </ul>
+        </aside>
+        <section>
+            <h1>Django Framework</h1>
+            <article>
+                <p>
+                    Django ist ein Python-Webframework, das bei der Entwicklung von Webanwendungen verwendet wird. Es folgt dem Modell-View-Controller (MVC)-Architekturmuster, bei dem die Modelle die Datenbank repräsentieren, die Views die Logik für die Darstellung der Daten steuern und die Controller die Interaktionen zwischen Modellen und Views handhaben.
+                </p>
+            
+                <h2>Vorteile von Django</h2>
+                <ul>
+                    <li>Einfache und intuitive Syntax: Django bietet eine klare und einfache Syntax, die das Schreiben von Code erleichtert.</li>
+                    <li>Robuste Dokumentation: Das Django-Framework verfügt über umfassende und gut strukturierte Dokumentation, die Anfängern den Einstieg erleichtert.</li>
+                    <li>Reichhaltige Funktionen: Django bietet eine Vielzahl von Funktionen und Modulen, die häufig in Webanwendungen benötigt werden, wie z.B. Benutzerauthentifizierung, Admin-Oberfläche, ORM (Object-Relational Mapping) und Formulare.</li>
+                    <li>Skalierbarkeit: Django wurde entwickelt, um skalierbare Webanwendungen zu erstellen und bewältigt auch komplexe Projekte mit einer großen Benutzerzahl.</li>
+                    <li>Sicherheit: Django legt großen Wert auf Sicherheit und bietet Schutzmechanismen gegen häufige Webangriffe wie Cross-Site Scripting (XSS), Cross-Site Request Forgery (CSRF) und SQL-Injektion.</li>
+                </ul>
+            
+                <h2>Nachteile von Django</h2>
+                <ul>
+                    <li>Komplexität: Da Django ein umfangreiches Framework ist, kann es für Anfänger anfangs komplex erscheinen.</li>
+                    <li>Lernkurve: Aufgrund der zahlreichen Funktionen und Konzepte kann es eine gewisse Zeit dauern, um sich mit Django vertraut zu machen und seine Funktionalitäten vollständig zu verstehen.</li>
+                    <li>Overhead: Django kann aufgrund seiner umfangreichen Funktionen einen gewissen Overhead verursachen, insbesondere wenn nur eine einfache Webanwendung entwickelt werden soll.</li>
+                </ul>
+            </article>
+        </section>
+
+        <!-- Second Content Block  -->
+        <aside>aside</aside>
+        <section>
+            <article>
+                <h2>Django MVT - Pattern</h2>
+                <img src="../img/django/Django-MVT-pattern.webp" alt="" srcset="">
+            </article>
+        </section>
+
+      
+    </div>
+  </div>
+  <!-- ENDE Content  -->
+
+
+  <!-- START <Footer>  -->
+  <footer>
+    <div class="container">Footer</div>
+  </footer>
+  <!-- END Footer  -->
+
+  <!-- JS -->
+  <script>
+    // JS: Header
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+        x.className += " responsive";
+        } else {
+        x.className = "topnav";
+        }
+    }
+
+    // JS: StickyHeader
+    window.onscroll = function() {stickyFunction()};
+
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+
+    function stickyFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
+  </script>
+
+</body>
+</html>
