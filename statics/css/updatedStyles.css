@@ -21,7 +21,8 @@
       }
       
       #navbar {
-        overflow: hidden;
+        /* uncommented to fix dropdown not visibile if header has the stick class */
+        /* overflow: hidden; */
         background-color: #333;
       }
       img {
