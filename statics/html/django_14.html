@@ -10,8 +10,8 @@
 
     <!-- START Section above Header -->
     <div class="header">
-      <h2>Header</h2>
-      <p>Scroll down to see the sticky effect.</p>
+      <h2>CHEATSHEET</h2>
+      <p>UML Aktivitätsdiagramm </p>
     </div>
     <!-- END Section above Header -->
 
@@ -72,47 +72,36 @@
         <aside>
           <h3>Tipps</h3>
           <ul>
-            <li><a href="https://www.w3schools.com/html/">W3 HTML</a></li>
-            <li><a href="https://www.w3schools.com/css/default.asp">W3 CSS</a></li>
-            <li><a href="https://www.w3schools.com/css/css3_mediaqueries.asp">W3 CSS: Media Queries</a></li>
-          </ul>
+            <li><a href="https://www.geeksforgeeks.org/unified-modeling-language-uml-introduction/">UML</a></li>
+            <li><a href="https://www.geeksforgeeks.org/unified-modeling-language-uml-activity-diagrams/">Aktivitätsdiagramm</a></li>
+        </ul>
         </aside>
         <section>
+            <h1>Django Framework</h1>
             <article>
-        
+                <h1>Verwendung des Master-Templates in Django</h1>
+
+                <p>
+                    Das Master-Template ist eine nützliche Technik in Django, um gemeinsame Teile der Benutzeroberfläche über mehrere Seiten hinweg wiederzuverwenden. Mit einem Master-Template können deine Schüler den HTML-Code für den Header, Footer, die Navigation und andere wiederkehrende Elemente zentral an einem Ort verwalten. Hier ist eine Anleitung, wie sie das Master-Template in Django nutzen können:
+                </p>
+            
+                <ol>
+                    <li>Erstelle eine HTML-Datei für das Master-Template, z.B. "master.html".</li>
+                    <li>Definiere in diesem Template den HTML-Code für den Header, Footer, die Navigation und andere gemeinsame Elemente der Benutzeroberfläche. Diese Elemente sollten in einem festgelegten Bereich platziert werden, der in anderen Templates überschrieben werden kann.</li>
+                    <li>Verwende den Django Template Language-Syntax, um den festgelegten Bereich für das Überschreiben zu markieren. Dies erfolgt mit dem Tag {% block content %}{% endblock %}, wobei "content" durch den entsprechenden Namen des Bereichs ersetzt werden kann.</li>
+                    <li>Speichere das Master-Template im Verzeichnis "templates" deiner Django-Anwendung.</li>
+                    <li>Erstelle für jede Seite deiner Anwendung ein spezifisches Template und erweitere es vom Master-Template. Dazu verwende den Django Template Language-Syntax {% extends 'master.html' %} am Anfang des Templates.</li>
+                    <li>Verwende den Django Template Language-Syntax {% block content %}Hier kommt der spezifische Inhalt{% endblock %} in den spezifischen Templates, um den Inhalt für den festgelegten Bereich des Master-Templates anzugeben. Ersetze "content" durch den entsprechenden Namen des Bereichs, den du im Master-Template definiert hast.</li>
+                    <li>Speichere die spezifischen Templates ebenfalls im Verzeichnis "templates" deiner Django-Anwendung.</li>
+                    <li>Beim Rendern der Seiten werden die spezifischen Templates das Master-Template erweitern und den Inhalt für den festgelegten Bereich des Master-Templates anzeigen.</li>
+                </ol>
+            
+                <p>
+                    Durch die Verwendung des Master-Templates können deine Schüler den HTML-Code für wiederkehrende Elemente in ihrer Anwendung effizient verwalten und Updates zentral an einer Stelle vornehmen. Dies erleichtert die Wartung und Weiterentwicklung ihrer Django-Anwendung.
+                </p>
             </article>
         </section>
-
-        <!-- Second Content Block  -->
-        <aside>aside</aside>
-        <section>
-            <article>
-            </article>
-        </section>
-
-        <!-- Third Content Block  -->
-        <aside>aside</aside>
-        <section>
-            <article></article>
-            <article>article</article>
-            <article>article</article>
-            <article>article</article>
-        </section>
-
-        <!-- Fourth Content Block  -->
-        <aside>aside</aside>
-        <section>
-            <article>article</article>
-            <article>article</article>
-            <article>article</article>
-            <article>article</article>
-            <article>article</article>
-        </section>
-
-
-
-
-        
+      
     </div>
   </div>
   <!-- ENDE Content  -->

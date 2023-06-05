@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- external Stylesheet -->
+    <link rel="stylesheet" href="/statics/css/updatedStyles.css">
+</head>
+<body>
+  <!-- START HEADING PART -->
+
+    <!-- START Section above Header -->
+    <div class="header">
+      <h2>CHEATSHEET</h2>
+      <p>UML Aktivitätsdiagramm </p>
+    </div>
+    <!-- END Section above Header -->
+
+    <!-- START Header / Nav -->
+    <div class="" id="navbar">
+      <div class="topnav" id="myTopnav" >
+          <a href="/statics/html/index.html" class="active">Home</a>
+
+          <div class="dropdown">
+            <button class="dropbtn">IHK
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="11_ihk.html">Lesson1.1: Bubblesort</a>
+              <a href="12_ihk.html">Lesson1.2: Datenauswertung</a>
+              <!-- <a href="12_ihk.html">Lesson1.2: Stringkomprimierung</a>
+              <a href="lesson2_3.html">Lesson1.3: Passwort Generator</a>
+              <a href="lesson2_4.html">Lesson1.4: getAppointment</a>
+              <a href="lesson2_5.html">Lesson1.5: Kino</a> -->
+            </div>
+          </div> 
+
+          <div class="dropdown">
+            <button class="dropbtn">UML
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="lesson3_1.html">Lesson3.1 Recherche</a>
+              <a href="lesson3_2.html">Lesson3.2 TagesschauNachbau</a>
+              <a href="lesson3_3.html">Lesson3.3 Jquery</a>
+            </div>
+          </div> 
+
+          <div class="dropdown">
+            <button class="dropbtn">Django
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="lesson3_1.html">Lesson4.1 Calculator</a>
+            </div>
+          </div>
+
+
+          
+          <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+      </div>
+    </div>
+    <!-- END Header / Nav -->
+
+  <!-- END HEADING PART -->
+
+
+  <!-- START Content  -->
+  <div class="container content" style="margin-top: 69px;/* height: auto; */">
+    <div class="grid-container">
+
+        <!-- Frist Content Block  -->
+        <aside>
+          <h3>Tipps</h3>
+          <ul>
+            <li><a href="https://www.geeksforgeeks.org/unified-modeling-language-uml-introduction/">UML</a></li>
+            <li><a href="https://www.geeksforgeeks.org/unified-modeling-language-uml-activity-diagrams/">Aktivitätsdiagramm</a></li>
+        </ul>
+        </aside>
+        <section>
+            <article>
+                <h1>Beschreibung des MVC-Patterns mit Parallelen und Unterschieden zum MVT-Pattern in Django</h1>
+
+                <h2>MVC-Pattern (Model-View-Controller)</h2>
+                <p>
+                    Das MVC-Pattern ist ein Architekturmuster, das bei der Entwicklung von Softwareanwendungen weit verbreitet ist. Es zielt darauf ab, die Struktur der Anwendung zu organisieren und die Trennung von Daten, Benutzeroberfläche und Steuerungslogik zu ermöglichen. Das M steht für das Model, das V für die View und das C für den Controller. Hier ist eine kurze Beschreibung der einzelnen Komponenten:
+                </p>
+            
+                <ul>
+                    <li>Model: Das Model repräsentiert die Daten und die Geschäftslogik der Anwendung. Es enthält die Datenstrukturen und -methoden, um auf die Daten zuzugreifen, sie zu ändern und zu verarbeiten. Das Model reagiert auf Anfragen des Controllers und aktualisiert sich entsprechend.</li>
+                    <li>View: Die View ist für die Darstellung der Benutzeroberfläche und die Anzeige der Daten zuständig. Sie erhält die Daten vom Model und stellt sie dem Benutzer auf angemessene Weise dar. Die View reagiert auf Benutzerinteraktionen und gibt die Eingaben an den Controller weiter.</li>
+                    <li>Controller: Der Controller nimmt Benutzerinteraktionen entgegen und verarbeitet sie. Er steuert den Fluss der Anwendung und vermittelt zwischen dem Model und der View. Der Controller empfängt Anfragen von der View, verarbeitet diese Anfragen und aktualisiert bei Bedarf das Model oder die View.</li>
+                </ul>
+            
+                <h2>MVT-Pattern (Model-View-Template in Django)</h2>
+                <p>
+                    Django, ein beliebtes Web-Framework, verwendet ein ähnliches Muster namens MVT (Model-View-Template). Obwohl die Namen ähnlich sind, gibt es einige Unterschiede zwischen MVC und MVT. Hier sind die Parallelen und Unterschiede:
+                </p>
+            
+                <h3>Parallelen zwischen MVC und MVT:</h3>
+                <ul>
+                    <li>Model: Sowohl MVC als auch MVT haben eine Komponente, die für die Daten und die Geschäftslogik zuständig ist.</li>
+                    <li>View/Template: In beiden Mustern gibt es eine Komponente, die für die Darstellung der Benutzeroberfläche zuständig ist.</li>
+                    <li>Controller/View: In MVC übernimmt der Controller die Verarbeitung von Benutzerinteraktionen und steuert den Fluss der Anwendung. In MVT übernimmt die View diese Aufgabe.</li>
+                </ul>
+            
+                <h3>Unterschiede zwischen MVC und MVT:</h3>
+                <ul>
+                    <li>Aufteilung der Aufgaben: Im MVC-Pattern ist der Controller für die Verarbeitung von Benutzerinteraktionen und die Aktualisierung des Models und der View zuständig. Im MVT-Pattern übernimmt die View die Verarbeitung von Benutzerinteraktionen, während das Template für die Darstellung der Daten zuständig ist. Das Model in Django ist ähnlich wie im MVC-Pattern für die Daten und die Geschäftslogik verantwortlich.</li>
+                    <li>Granularität: Das MVC-Pattern bietet eine feinere Granularität der Komponenten, da der Controller zwischen Model und View vermittelt. Das MVT-Pattern hat eine etwas grobere Granularität, da die View sowohl die Aufgaben des Controllers als auch der View übernimmt.</li>
+                    <li>Verwendung in Webanwendungen: Das MVC-Pattern wird in vielen Webanwendungen verwendet, während das MVT-Pattern speziell für Django entwickelt wurde und die spezifischen Anforderungen einer Webanwendung berücksichtigt.</li>
+                </ul>
+            
+                <p>
+                    Es ist wichtig zu beachten, dass das MVT-Pattern in Django effektiv auf ähnlichen Prinzipien wie das MVC-Pattern basiert, jedoch einige Anpassungen vornimmt, um den spezifischen Bedürfnissen einer Webanwendung gerecht zu werden.
+                </p>
+            </article>
+        </section>
+
+        <!-- Second Content Block  -->
+        <aside>aside</aside>
+        <section>
+            <article>
+                <h2>MVT VS MVC</h2>
+                <img src="../img/django/mvc_mvt.png" alt="" srcset="">
+            </article>
+        </section>
+
+      
+    </div>
+  </div>
+  <!-- ENDE Content  -->
+
+
+  <!-- START <Footer>  -->
+  <footer>
+    <div class="container">Footer</div>
+  </footer>
+  <!-- END Footer  -->
+
+  <!-- JS -->
+  <script>
+    // JS: Header
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+        x.className += " responsive";
+        } else {
+        x.className = "topnav";
+        }
+    }
+
+    // JS: StickyHeader
+    window.onscroll = function() {stickyFunction()};
+
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+
+    function stickyFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
+  </script>
+
+</body>
+</html>

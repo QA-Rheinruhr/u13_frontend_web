@@ -123,6 +123,10 @@
         color: white;
       }
 
+      aside > ul {
+        overflow: hidden;
+      }
+
       section
       {
           background-color: lightgrey;
