@@ -80,21 +80,23 @@
           <h3>Tipps</h3>
           <ul>
             <li><a href="https://www.geeksforgeeks.org/unified-modeling-language-uml-introduction/">UML</a></li>
-            <li><a href="https://www.geeksforgeeks.org/unified-modeling-language-uml-activity-diagrams/">Aktivitätsdiagramm</a></li>
+            <li><a href="https://www.geeksforgeeks.org/unified-modeling-language-uml-sequence-diagrams/">Sequenzdiagramm</a></li>
         </ul>
         </aside>
         <section>
-            <h1>CHEATSHEET - UML Aktivitätsdiagramm </h1>
+            <h1>CHEATSHEET - UML Sequenzdiagramm </h1>
             <article>
-                <h2>Definition: Aktivitätsdiagramm</h2>
+                <h2>Definition: Sequenzdiagramm</h2>
                 <ul>
-                    <li>ist ein Verhaltensdiagramm der Unified Modeling Language (UML)</li>
-                    <li>stellt die Vernetzung von elementaren Aktionen und deren Verbindungen mit Kontroll- und Datenflüssen grafisch dar.</li>
+                    <li>ist ein Verhaltensdiagramm, welches eine Interaktion im Sinne der Unified Modeling Language (UML) grafisch darstellt</li>
+                    <li>ist eine der vier Arten von Interaktionsdiagrammen</li>
+                    <li>beschreibt den Austausch von Nachrichten zwischen Objekten mittels Lebenslinien</li>
+                    <li>stellt einen Weg durch einen Entscheidungsbaum innerhalb eines Systemablaufes dar</li>
                 </ul>
-                <h3>Beispiel-1:</h3>
-                <img src="../img/uml/aktivitaet_Beispiel1.png" alt="">
-                <h3>Beispiel-2:</h3>
-                <img src="../img/uml/aktivitaet_Beispiel2.png" alt="">
+                <h3>Beispiel-1: Allgemeine Erklärungen</h3>
+                <img src="../img/uml/squenz_Beispiel1_async.png" alt="">
+                <h3>Beispiel-2: Notationsvarianten für synchrone und asynchrone Nachrichten</h3>
+                <img src="../img/uml/aktivitaet_Beispiel2.png" alt="Notationsvarianten für synchrone und asynchrone Nachrichten">
             </article>
         </section>
 
@@ -103,9 +105,11 @@
         <section>
             <article>
                 <h2>IHK-Beispiel-Aufgabe</h2>
-                <img src="../img/uml/aktivitaet_CS_aufgabe.png" alt="" srcset="">
+                <img src="../img/uml/IHK__sequenz_aufgabe2.png" alt="" srcset="">
+                <h3>Makierungen</h3>
+                <img src="/statics/img/uml/IHK__sequenz_aufgabe2_marked.png" alt="">
                 <h3>Lösung</h3>
-                <img src="../img/uml/aktivitaet_CS_loesung.png" alt="">
+                <img src="/statics/img/uml/IHK__sequenz_aufgabe2_lösung.png" alt="">
             </article>
         </section>
 
@@ -113,31 +117,41 @@
         <aside>aside</aside>
         <section>
             <article>
-                <h2>Vorgehensweise</h2>
-                <ol>
-                    <b><li>Makieren</li></b>
+              <h2>Vorgehensweise</h2>
+              <ol>
+                <li>
+                  Makieren (Vorüberlegungen anstellen)
+                  <ol>
+                    <li>Akteure ermitteln</li>
+                    <li>Aktionen der Akteure ermitteln</li>
+                    <li>Logische Reihenfolge ermitteln</li>
+                    <li>Rückgabe Werte beachten</li>
+                    <li>Verzweigung, Schleifen, Konstruktoren, usw berücksichtigen</li>
+                  </ol>
+                </li>
+                <br>
+                <li>
+                  Skizze anfertigen (Optional nur bei großen Aufgaben)
+                  <ol>
+                    <li>Akteure einzeichen</li>
+                    <li>Aktionen in logischer Rheinfolge zuordnen</li>
+                  </ol>
+                </li>
+                <br>
+                <li>
+                  Zeichen (Lösen der Aufgabe)
+                  <ol>
+                    <li>Akteure einzeichen</li>
+                    <li>Aktivitätslinien einzeichen</li>
+                    <li>Aktionen in logischer Rheienfolge einzeichen</li>
                     <ol>
-                        <li>Akteure im Text ausfindig machen</li>
-                        <li>Aktionen der Akteure herausfinden</li>
-                        <li>Aktionen sinnvoll benennen</li>
-                        <li>Kontrollstrukturen ermitteln - z.B. Schliefen, Verzweigungen, Parallele Aktionen</li>
+                      <li>Aktion einzeichen</li>
+                      <li>Lebensbalken einzeichen</li>
+                      <li>Rückgabewerte / Folge Aktionen berücksichtigen</li>
                     </ol>
-                    <br>
-                    <b><li>Vorüberlegungen anstellen</li></b>
-                    <ol>
-                        <li>Wenn nötig Skizze anfertigen </li>
-                    </ol>
-                    <br>
-                    <b><li>Zeichen</li></b>
-                    <ol>
-                        <li>Text schritt für Schritt durchgehen</li>
-                        <li>Akteure einzeichnen </li>
-                        <ol>
-                            <li>Pro Akteur eine Schwimmbahn anlegen</li>
-                            <li>Aktionen bei den passenden Akuteren eintragen </li>
-                        </ol>
-                    </ol>
-                </ol>
+                  </ol>
+                </li>
+              </ol>
 
             </article>
 
